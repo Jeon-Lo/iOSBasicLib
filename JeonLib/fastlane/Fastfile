@@ -1,0 +1,140 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    #Slack Test Monitor Channel
+    #슬랙 연동을 위해 아래 slack 채널 정보를 입력
+    ENV["SLACK_URL"] = "https://hooks.slack.com/services/sample/sample1/sample2"
+    #Slack OP Monitor Channel
+    #ENV["SLACK_URL"] = "https://hooks.slack.com/services/sample/sample1/sample2"
+  end
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    slack(
+      message: "Successfully deployed new App Update."    
+    )
+  end
+
+  error do |lane, exception|
+    slack(
+     message: "FastLane Exception : " + exception.message + " (By Jeon)",
+     success: false
+    )
+  end
+
+  desc "Push a new release build to the App Store"
+  lane :upload_as do
+    increment_build_number(xcodeproj: "-.xcodeproj")
+    build_app(workspace: "-.xcworkspace", scheme: "APP_SCHEME")
+    upload_to_app_store
+  end
+
+  def updateVersion(options)
+    if options[:version]
+      version = options[:version]
+    else
+      version = prompt(text: "Please Input New Version Name(current : " + getOPVersionNumber + ")")
+    end
+
+    re = /\d+.\d+.\d+/
+    versionNum = version[re, 0]
+
+    if (versionNum)
+      increment_version_number(
+        version_number: versionNum
+      )
+    elsif (version == 'major' || version == 'minor' || version == 'patch')
+      increment_version_number(
+        bump_type: version
+      )
+    else
+      UI.user_error!("[ERROR] Wrong version!!!!!!")
+    end
+  end
+  
+  def updateVersion(options)
+    if options[:version]
+      version = options[:version]
+    else
+      version = prompt(text: "Please Input New Version Name(current : " + getOPVersionNumber + ")")
+    end
+
+    re = /\d+.\d+.\d+/
+    versionNum = version[re, 0]
+
+    if (versionNum)
+      increment_version_number(
+        version_number: versionNum
+      )
+    elsif (version == 'major' || version == 'minor' || version == 'patch')
+      increment_version_number(
+        bump_type: version
+      )
+    else
+      UI.user_error!("[ERROR] Wrong version!!!!!!")
+    end
+  end
+
+  desc "Push a New Test Build To the Test Flight"
+  lane :upload_tf do |options|
+    updateVersion(options)
+    slack(message: "APP_NAME Version " + getOPVersionNumber + " 자동화 업로드 시작 중... ")
+    slack(message: "APP_NAME Version " + getOPVersionNumber + " Dummy 데이터 삭제 중...")
+    clear_derived_data
+    slack(message: "APP_NAME Version " + getOPVersionNumber + " 빌드 설정 저장 중...")
+    gym(
+	scheme: "APP_SCHEME",
+	export_method: "app-store",
+	clean: true
+    )
+    slack(message: "APP_NAME Version " + getOPVersionNumber + " 버전 코드 증가")
+    increment_build_number(xcodeproj: "PROJ_NAME.xcodeproj")
+    slack(message: "APP_NAME Version " + getOPVersionNumber + " 앱 빌드 중...")
+    build_app(workspace: "PROJ_NAME.xcworkspace", scheme: "APP_SCHEME")
+    slack(message: "APP_NAME Version " + getOPVersionNumber + " 업로드 중...")
+    upload_to_testflight
+    slack(message: "APP_NAME Version " + getOPVersionNumber + " 해당 빌드가 TestFlight에
+업로드 완료 처리 되었습니다.")
+    gitCommit
+  end
+  
+    desc "For Test"
+  lane :do_log do |options|
+    updateVersion(options)
+    gitCommit
+  end
+  
+  def gitCommit
+    isGitCommit = prompt(text: "Commit this version to Git?(Y/N)")
+    if (isGitCommit == 'Y')
+       message = prompt(text: "please input commit message for github")
+       git_commit(path: "./", message: message)
+       puts 'To remotely upload to Git, please input command \'git add . & git push\''
+    end
+  end
+
+  def getOPVersionNumber
+      return get_version_number(
+        xcodeproj: "PROJ_NAME.xcodeproj",
+        target: "APP_SCHEME"
+      )
+  end
+end
+

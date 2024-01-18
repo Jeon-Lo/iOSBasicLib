@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g9K-tw-s0E" customClass="ProgressDialog" customModule="PDFApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="678" height="569"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQ7-nA-Qe7">
+                    <rect key="frame" x="0.0" y="59" width="678" height="0.0"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="Q32-ef-2WV"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="9A9-aF-KIx">
+                    <rect key="frame" x="329" y="274.66666666666669" width="20" height="20"/>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fMJ-am-ud6"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9A9-aF-KIx" firstAttribute="centerX" secondItem="g9K-tw-s0E" secondAttribute="centerX" id="XqH-vq-5fb"/>
+                <constraint firstItem="gQ7-nA-Qe7" firstAttribute="leading" secondItem="fMJ-am-ud6" secondAttribute="leading" id="bAT-9h-C0S"/>
+                <constraint firstItem="9A9-aF-KIx" firstAttribute="centerY" secondItem="g9K-tw-s0E" secondAttribute="centerY" id="eHR-ma-qle"/>
+                <constraint firstItem="fMJ-am-ud6" firstAttribute="trailing" secondItem="gQ7-nA-Qe7" secondAttribute="trailing" id="hFW-c6-ijy"/>
+                <constraint firstItem="gQ7-nA-Qe7" firstAttribute="top" secondItem="fMJ-am-ud6" secondAttribute="top" id="tXs-x0-C5d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="container" destination="gQ7-nA-Qe7" id="CI3-ij-KE4"/>
+            </connections>
+            <point key="canvasLocation" x="352.67175572519085" y="120.07042253521128"/>
+        </view>
+    </objects>
+</document>

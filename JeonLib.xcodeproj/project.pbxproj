@@ -13,9 +13,97 @@
 		B0A697BF27424A01001CB0E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A697BD27424A01001CB0E1 /* Main.storyboard */; };
 		B0A697C127424A03001CB0E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A697C027424A03001CB0E1 /* Assets.xcassets */; };
 		B0A697C427424A03001CB0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0A697C227424A03001CB0E1 /* LaunchScreen.storyboard */; };
+		CA25B7882B58AA19004EF4BA /* SizeCheckView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7452B58AA19004EF4BA /* SizeCheckView.xib */; };
+		CA25B7892B58AA19004EF4BA /* RadioGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7462B58AA19004EF4BA /* RadioGroup.swift */; };
+		CA25B78A2B58AA19004EF4BA /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7472B58AA19004EF4BA /* ToastView.swift */; };
+		CA25B78B2B58AA19004EF4BA /* SizeChangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7482B58AA19004EF4BA /* SizeChangeSlider.swift */; };
+		CA25B78C2B58AA19004EF4BA /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7492B58AA19004EF4BA /* ToastView.xib */; };
+		CA25B78D2B58AA19004EF4BA /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B74B2B58AA19004EF4BA /* BrightnessView.swift */; };
+		CA25B78E2B58AA19004EF4BA /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B74C2B58AA19004EF4BA /* ColorUtils.swift */; };
+		CA25B78F2B58AA19004EF4BA /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B74D2B58AA19004EF4BA /* ColorWheel.swift */; };
+		CA25B7902B58AA19004EF4BA /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B74E2B58AA19004EF4BA /* SelectedColorView.swift */; };
+		CA25B7912B58AA19004EF4BA /* TouchPassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B74F2B58AA19004EF4BA /* TouchPassButton.swift */; };
+		CA25B7922B58AA19004EF4BA /* RadioGroup.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7502B58AA19004EF4BA /* RadioGroup.xib */; };
+		CA25B7932B58AA19004EF4BA /* SizeCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7512B58AA19004EF4BA /* SizeCheckView.swift */; };
+		CA25B7942B58AA19004EF4BA /* CheckBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7522B58AA19004EF4BA /* CheckBox.xib */; };
+		CA25B7952B58AA19004EF4BA /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7532B58AA19004EF4BA /* CheckBox.swift */; };
+		CA25B7962B58AA19004EF4BA /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7542B58AA19004EF4BA /* Toast.swift */; };
+		CA25B7972B58AA19004EF4BA /* JUDocPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7562B58AA19004EF4BA /* JUDocPicker.swift */; };
+		CA25B79A2B58AA19004EF4BA /* ColorAlphaSelectDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B75B2B58AA19004EF4BA /* ColorAlphaSelectDialog.xib */; };
+		CA25B79C2B58AA19004EF4BA /* ColorPickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B75D2B58AA19004EF4BA /* ColorPickerDialog.swift */; };
+		CA25B7A02B58AA19004EF4BA /* JCAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7622B58AA19004EF4BA /* JCAlertController.swift */; };
+		CA25B7A12B58AA19004EF4BA /* JCAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7632B58AA19004EF4BA /* JCAlertController.xib */; };
+		CA25B7A42B58AA19004EF4BA /* BaseCustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7662B58AA19004EF4BA /* BaseCustomDialog.swift */; };
+		CA25B7A72B58AA19004EF4BA /* ProgressDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7692B58AA19004EF4BA /* ProgressDialog.xib */; };
+		CA25B7A92B58AA19004EF4BA /* ColorPickerDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B76B2B58AA19004EF4BA /* ColorPickerDialog.xib */; };
+		CA25B7AB2B58AA19004EF4BA /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B76D2B58AA19004EF4BA /* ProgressDialog.swift */; };
+		CA25B7AF2B58AA19004EF4BA /* BaseColorPickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7712B58AA19004EF4BA /* BaseColorPickerDialog.swift */; };
+		CA25B7BF2B58AA19004EF4BA /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7862B58AA19004EF4BA /* Screen.swift */; };
+		CA25B7D42B58AADC004EF4BA /* BaseAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7C72B58AADC004EF4BA /* BaseAlert.swift */; };
+		CA25B7D82B58AADC004EF4BA /* BaseAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7CB2B58AADC004EF4BA /* BaseAlertViewController.swift */; };
+		CA25B7E72B58AB43004EF4BA /* JUKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7DB2B58AB43004EF4BA /* JUKit.swift */; };
+		CA25B7E82B58AB43004EF4BA /* JUProgress.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7DC2B58AB43004EF4BA /* JUProgress.xib */; };
+		CA25B7E92B58AB43004EF4BA /* JUAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7DD2B58AB43004EF4BA /* JUAlert.swift */; };
+		CA25B7EA2B58AB43004EF4BA /* JUToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7DE2B58AB43004EF4BA /* JUToast.swift */; };
+		CA25B7EB2B58AB43004EF4BA /* JUToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7DF2B58AB43004EF4BA /* JUToastView.xib */; };
+		CA25B7EC2B58AB43004EF4BA /* JUProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7E02B58AB43004EF4BA /* JUProgress.swift */; };
+		CA25B7EE2B58AB43004EF4BA /* JUAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7E22B58AB43004EF4BA /* JUAlert.xib */; };
+		CA25B7EF2B58AB43004EF4BA /* JUToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7E32B58AB43004EF4BA /* JUToastView.swift */; };
+		CA25B7F02B58AB43004EF4BA /* JUImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7E42B58AB43004EF4BA /* JUImagePicker.swift */; };
+		CA25B7F12B58AB43004EF4BA /* JUContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7E52B58AB43004EF4BA /* JUContextMenu.swift */; };
+		CA25B7F22B58AB43004EF4BA /* JUContextMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA25B7E62B58AB43004EF4BA /* JUContextMenu.xib */; };
+		CA25B8022B58AB7F004EF4BA /* JSProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7F52B58AB7F004EF4BA /* JSProgress.swift */; };
+		CA25B8032B58AB7F004EF4BA /* JSAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7F62B58AB7F004EF4BA /* JSAlert.swift */; };
+		CA25B8052B58AB7F004EF4BA /* JSTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7FB2B58AB7F004EF4BA /* JSTabView.swift */; };
+		CA25B8072B58AB7F004EF4BA /* JSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7FD2B58AB7F004EF4BA /* JSButton.swift */; };
+		CA25B8082B58AB7F004EF4BA /* JSRadioGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7FE2B58AB7F004EF4BA /* JSRadioGroup.swift */; };
+		CA25B8092B58AB7F004EF4BA /* JSCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B7FF2B58AB7F004EF4BA /* JSCheckBox.swift */; };
+		CA25B80A2B58AB7F004EF4BA /* JSPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B8002B58AB7F004EF4BA /* JSPopup.swift */; };
+		CA25B80F2B58ABEC004EF4BA /* CookieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B80D2B58ABEC004EF4BA /* CookieManager.swift */; };
+		CA25B8102B58ABEC004EF4BA /* LogEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B80E2B58ABEC004EF4BA /* LogEx.swift */; };
+		CA25B8152B58ABF2004EF4BA /* FileDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B8132B58ABF2004EF4BA /* FileDAO.swift */; };
+		CA25B8162B58ABF2004EF4BA /* FileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B8142B58ABF2004EF4BA /* FileEntity.swift */; };
+		CA25B8392B58ACCD004EF4BA /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8192B58ACCD004EF4BA /* README.txt */; };
+		CA25B83A2B58ACCD004EF4BA /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = CA25B81A2B58ACCD004EF4BA /* Appfile */; };
+		CA25B83B2B58ACCD004EF4BA /* Deliverfile in Resources */ = {isa = PBXBuildFile; fileRef = CA25B81B2B58ACCD004EF4BA /* Deliverfile */; };
+		CA25B83C2B58ACCD004EF4BA /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = CA25B81C2B58ACCD004EF4BA /* Fastfile */; };
+		CA25B83D2B58ACCD004EF4BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CA25B81D2B58ACCD004EF4BA /* README.md */; };
+		CA25B83E2B58ACCD004EF4BA /* copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B81F2B58ACCD004EF4BA /* copyright.txt */; };
+		CA25B83F2B58ACCD004EF4BA /* secondary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8202B58ACCD004EF4BA /* secondary_first_sub_category.txt */; };
+		CA25B8402B58ACCD004EF4BA /* secondary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8212B58ACCD004EF4BA /* secondary_category.txt */; };
+		CA25B8412B58ACCD004EF4BA /* secondary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8222B58ACCD004EF4BA /* secondary_second_sub_category.txt */; };
+		CA25B8422B58ACCD004EF4BA /* primary_second_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8232B58ACCD004EF4BA /* primary_second_sub_category.txt */; };
+		CA25B8432B58ACCD004EF4BA /* phone_number.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8252B58ACCD004EF4BA /* phone_number.txt */; };
+		CA25B8442B58ACCD004EF4BA /* demo_user.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8262B58ACCD004EF4BA /* demo_user.txt */; };
+		CA25B8452B58ACCD004EF4BA /* notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8272B58ACCD004EF4BA /* notes.txt */; };
+		CA25B8462B58ACCD004EF4BA /* email_address.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8282B58ACCD004EF4BA /* email_address.txt */; };
+		CA25B8472B58ACCD004EF4BA /* last_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8292B58ACCD004EF4BA /* last_name.txt */; };
+		CA25B8482B58ACCD004EF4BA /* first_name.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B82A2B58ACCD004EF4BA /* first_name.txt */; };
+		CA25B8492B58ACCD004EF4BA /* demo_password.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B82B2B58ACCD004EF4BA /* demo_password.txt */; };
+		CA25B84A2B58ACCD004EF4BA /* privacy_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B82D2B58ACCD004EF4BA /* privacy_url.txt */; };
+		CA25B84B2B58ACCD004EF4BA /* subtitle.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B82E2B58ACCD004EF4BA /* subtitle.txt */; };
+		CA25B84C2B58ACCD004EF4BA /* support_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B82F2B58ACCD004EF4BA /* support_url.txt */; };
+		CA25B84D2B58ACCD004EF4BA /* keywords.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8302B58ACCD004EF4BA /* keywords.txt */; };
+		CA25B84E2B58ACCD004EF4BA /* apple_tv_privacy_policy.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8312B58ACCD004EF4BA /* apple_tv_privacy_policy.txt */; };
+		CA25B84F2B58ACCD004EF4BA /* promotional_text.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8322B58ACCD004EF4BA /* promotional_text.txt */; };
+		CA25B8502B58ACCD004EF4BA /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8332B58ACCD004EF4BA /* release_notes.txt */; };
+		CA25B8512B58ACCD004EF4BA /* name.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8342B58ACCD004EF4BA /* name.txt */; };
+		CA25B8522B58ACCD004EF4BA /* marketing_url.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8352B58ACCD004EF4BA /* marketing_url.txt */; };
+		CA25B8532B58ACCD004EF4BA /* description.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8362B58ACCD004EF4BA /* description.txt */; };
+		CA25B8542B58ACCD004EF4BA /* primary_first_sub_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8372B58ACCD004EF4BA /* primary_first_sub_category.txt */; };
+		CA25B8552B58ACCD004EF4BA /* primary_category.txt in Resources */ = {isa = PBXBuildFile; fileRef = CA25B8382B58ACCD004EF4BA /* primary_category.txt */; };
+		CA25B8572B58AE21004EF4BA /* ColorAlphaSelectDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B8562B58AE21004EF4BA /* ColorAlphaSelectDialog.swift */; };
+		CA25B8592B58AF1F004EF4BA /* JUTouchPassButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B8582B58AF1F004EF4BA /* JUTouchPassButton.swift */; };
+		CA25B85B2B58AF66004EF4BA /* AnnotationParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B85A2B58AF66004EF4BA /* AnnotationParams.swift */; };
+		CA25B85D2B58AFA0004EF4BA /* Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B85C2B58AFA0004EF4BA /* Ex.swift */; };
+		CA25B85F2B58AFFD004EF4BA /* ExUi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B85E2B58AFFD004EF4BA /* ExUi.swift */; };
+		CA25B8612B58B0A9004EF4BA /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B8602B58B0A9004EF4BA /* FileStorage.swift */; };
+		CA25B8632B58B0C6004EF4BA /* PathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA25B8622B58B0C6004EF4BA /* PathManager.swift */; };
+		D6376167748BA2D6F7F6CFF7 /* Pods_JeonLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3409FDDD1591872CE85226C /* Pods_JeonLib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3481E3EFE277C554612A57BE /* Pods-JeonLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeonLib.debug.xcconfig"; path = "Target Support Files/Pods-JeonLib/Pods-JeonLib.debug.xcconfig"; sourceTree = "<group>"; };
 		B0A697B427424A01001CB0E1 /* JeonLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeonLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A697B727424A01001CB0E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0A697B927424A01001CB0E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +112,94 @@
 		B0A697C027424A03001CB0E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A697C327424A03001CB0E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0A697C527424A03001CB0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B263BAC64E0FD02C6B20FBED /* Pods-JeonLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeonLib.release.xcconfig"; path = "Target Support Files/Pods-JeonLib/Pods-JeonLib.release.xcconfig"; sourceTree = "<group>"; };
+		CA25B7452B58AA19004EF4BA /* SizeCheckView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SizeCheckView.xib; sourceTree = "<group>"; };
+		CA25B7462B58AA19004EF4BA /* RadioGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioGroup.swift; sourceTree = "<group>"; };
+		CA25B7472B58AA19004EF4BA /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		CA25B7482B58AA19004EF4BA /* SizeChangeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeChangeSlider.swift; sourceTree = "<group>"; };
+		CA25B7492B58AA19004EF4BA /* ToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
+		CA25B74B2B58AA19004EF4BA /* BrightnessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
+		CA25B74C2B58AA19004EF4BA /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		CA25B74D2B58AA19004EF4BA /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		CA25B74E2B58AA19004EF4BA /* SelectedColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
+		CA25B74F2B58AA19004EF4BA /* TouchPassButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchPassButton.swift; sourceTree = "<group>"; };
+		CA25B7502B58AA19004EF4BA /* RadioGroup.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioGroup.xib; sourceTree = "<group>"; };
+		CA25B7512B58AA19004EF4BA /* SizeCheckView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeCheckView.swift; sourceTree = "<group>"; };
+		CA25B7522B58AA19004EF4BA /* CheckBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckBox.xib; sourceTree = "<group>"; };
+		CA25B7532B58AA19004EF4BA /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		CA25B7542B58AA19004EF4BA /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		CA25B7562B58AA19004EF4BA /* JUDocPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUDocPicker.swift; sourceTree = "<group>"; };
+		CA25B75B2B58AA19004EF4BA /* ColorAlphaSelectDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorAlphaSelectDialog.xib; sourceTree = "<group>"; };
+		CA25B75D2B58AA19004EF4BA /* ColorPickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerDialog.swift; sourceTree = "<group>"; };
+		CA25B7622B58AA19004EF4BA /* JCAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JCAlertController.swift; sourceTree = "<group>"; };
+		CA25B7632B58AA19004EF4BA /* JCAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCAlertController.xib; sourceTree = "<group>"; };
+		CA25B7662B58AA19004EF4BA /* BaseCustomDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCustomDialog.swift; sourceTree = "<group>"; };
+		CA25B7692B58AA19004EF4BA /* ProgressDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgressDialog.xib; sourceTree = "<group>"; };
+		CA25B76B2B58AA19004EF4BA /* ColorPickerDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorPickerDialog.xib; sourceTree = "<group>"; };
+		CA25B76D2B58AA19004EF4BA /* ProgressDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
+		CA25B7712B58AA19004EF4BA /* BaseColorPickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseColorPickerDialog.swift; sourceTree = "<group>"; };
+		CA25B7862B58AA19004EF4BA /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		CA25B7C72B58AADC004EF4BA /* BaseAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAlert.swift; sourceTree = "<group>"; };
+		CA25B7CB2B58AADC004EF4BA /* BaseAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAlertViewController.swift; sourceTree = "<group>"; };
+		CA25B7DB2B58AB43004EF4BA /* JUKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUKit.swift; sourceTree = "<group>"; };
+		CA25B7DC2B58AB43004EF4BA /* JUProgress.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JUProgress.xib; sourceTree = "<group>"; };
+		CA25B7DD2B58AB43004EF4BA /* JUAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUAlert.swift; sourceTree = "<group>"; };
+		CA25B7DE2B58AB43004EF4BA /* JUToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUToast.swift; sourceTree = "<group>"; };
+		CA25B7DF2B58AB43004EF4BA /* JUToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JUToastView.xib; sourceTree = "<group>"; };
+		CA25B7E02B58AB43004EF4BA /* JUProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUProgress.swift; sourceTree = "<group>"; };
+		CA25B7E22B58AB43004EF4BA /* JUAlert.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JUAlert.xib; sourceTree = "<group>"; };
+		CA25B7E32B58AB43004EF4BA /* JUToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUToastView.swift; sourceTree = "<group>"; };
+		CA25B7E42B58AB43004EF4BA /* JUImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUImagePicker.swift; sourceTree = "<group>"; };
+		CA25B7E52B58AB43004EF4BA /* JUContextMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUContextMenu.swift; sourceTree = "<group>"; };
+		CA25B7E62B58AB43004EF4BA /* JUContextMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JUContextMenu.xib; sourceTree = "<group>"; };
+		CA25B7F52B58AB7F004EF4BA /* JSProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSProgress.swift; sourceTree = "<group>"; };
+		CA25B7F62B58AB7F004EF4BA /* JSAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSAlert.swift; sourceTree = "<group>"; };
+		CA25B7FB2B58AB7F004EF4BA /* JSTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSTabView.swift; sourceTree = "<group>"; };
+		CA25B7FD2B58AB7F004EF4BA /* JSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSButton.swift; sourceTree = "<group>"; };
+		CA25B7FE2B58AB7F004EF4BA /* JSRadioGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSRadioGroup.swift; sourceTree = "<group>"; };
+		CA25B7FF2B58AB7F004EF4BA /* JSCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSCheckBox.swift; sourceTree = "<group>"; };
+		CA25B8002B58AB7F004EF4BA /* JSPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSPopup.swift; sourceTree = "<group>"; };
+		CA25B80D2B58ABEC004EF4BA /* CookieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CookieManager.swift; sourceTree = "<group>"; };
+		CA25B80E2B58ABEC004EF4BA /* LogEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogEx.swift; sourceTree = "<group>"; };
+		CA25B8132B58ABF2004EF4BA /* FileDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDAO.swift; sourceTree = "<group>"; };
+		CA25B8142B58ABF2004EF4BA /* FileEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileEntity.swift; sourceTree = "<group>"; };
+		CA25B8192B58ACCD004EF4BA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		CA25B81A2B58ACCD004EF4BA /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		CA25B81B2B58ACCD004EF4BA /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
+		CA25B81C2B58ACCD004EF4BA /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		CA25B81D2B58ACCD004EF4BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CA25B81F2B58ACCD004EF4BA /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
+		CA25B8202B58ACCD004EF4BA /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
+		CA25B8212B58ACCD004EF4BA /* secondary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_category.txt; sourceTree = "<group>"; };
+		CA25B8222B58ACCD004EF4BA /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
+		CA25B8232B58ACCD004EF4BA /* primary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_second_sub_category.txt; sourceTree = "<group>"; };
+		CA25B8252B58ACCD004EF4BA /* phone_number.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phone_number.txt; sourceTree = "<group>"; };
+		CA25B8262B58ACCD004EF4BA /* demo_user.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo_user.txt; sourceTree = "<group>"; };
+		CA25B8272B58ACCD004EF4BA /* notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = notes.txt; sourceTree = "<group>"; };
+		CA25B8282B58ACCD004EF4BA /* email_address.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = email_address.txt; sourceTree = "<group>"; };
+		CA25B8292B58ACCD004EF4BA /* last_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = last_name.txt; sourceTree = "<group>"; };
+		CA25B82A2B58ACCD004EF4BA /* first_name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = first_name.txt; sourceTree = "<group>"; };
+		CA25B82B2B58ACCD004EF4BA /* demo_password.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = demo_password.txt; sourceTree = "<group>"; };
+		CA25B82D2B58ACCD004EF4BA /* privacy_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy_url.txt; sourceTree = "<group>"; };
+		CA25B82E2B58ACCD004EF4BA /* subtitle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = subtitle.txt; sourceTree = "<group>"; };
+		CA25B82F2B58ACCD004EF4BA /* support_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support_url.txt; sourceTree = "<group>"; };
+		CA25B8302B58ACCD004EF4BA /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
+		CA25B8312B58ACCD004EF4BA /* apple_tv_privacy_policy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = apple_tv_privacy_policy.txt; sourceTree = "<group>"; };
+		CA25B8322B58ACCD004EF4BA /* promotional_text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = promotional_text.txt; sourceTree = "<group>"; };
+		CA25B8332B58ACCD004EF4BA /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		CA25B8342B58ACCD004EF4BA /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
+		CA25B8352B58ACCD004EF4BA /* marketing_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketing_url.txt; sourceTree = "<group>"; };
+		CA25B8362B58ACCD004EF4BA /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		CA25B8372B58ACCD004EF4BA /* primary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_first_sub_category.txt; sourceTree = "<group>"; };
+		CA25B8382B58ACCD004EF4BA /* primary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_category.txt; sourceTree = "<group>"; };
+		CA25B8562B58AE21004EF4BA /* ColorAlphaSelectDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorAlphaSelectDialog.swift; sourceTree = "<group>"; };
+		CA25B8582B58AF1F004EF4BA /* JUTouchPassButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JUTouchPassButton.swift; sourceTree = "<group>"; };
+		CA25B85A2B58AF66004EF4BA /* AnnotationParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationParams.swift; sourceTree = "<group>"; };
+		CA25B85C2B58AFA0004EF4BA /* Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ex.swift; sourceTree = "<group>"; };
+		CA25B85E2B58AFFD004EF4BA /* ExUi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUi.swift; sourceTree = "<group>"; };
+		CA25B8602B58B0A9004EF4BA /* FileStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		CA25B8622B58B0C6004EF4BA /* PathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathManager.swift; sourceTree = "<group>"; };
+		E3409FDDD1591872CE85226C /* Pods_JeonLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeonLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +207,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6376167748BA2D6F7F6CFF7 /* Pods_JeonLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4182900D3EE346B1AC8D3B4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3409FDDD1591872CE85226C /* Pods_JeonLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1649FFBAD7848F56DCFAFD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3481E3EFE277C554612A57BE /* Pods-JeonLib.debug.xcconfig */,
+				B263BAC64E0FD02C6B20FBED /* Pods-JeonLib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B0A697AB27424A01001CB0E1 = {
 			isa = PBXGroup;
 			children = (
 				B0A697B627424A01001CB0E1 /* JeonLib */,
 				B0A697B527424A01001CB0E1 /* Products */,
+				A1649FFBAD7848F56DCFAFD1 /* Pods */,
+				4182900D3EE346B1AC8D3B4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +252,253 @@
 		B0A697B627424A01001CB0E1 /* JeonLib */ = {
 			isa = PBXGroup;
 			children = (
+				CA25B8172B58ACCD004EF4BA /* fastlane */,
+				CA25B8112B58ABF2004EF4BA /* localDB */,
+				CA25B80C2B58AB9C004EF4BA /* Utils */,
+				CA25B7422B58AA19004EF4BA /* UI */,
 				B0A697B727424A01001CB0E1 /* AppDelegate.swift */,
 				B0A697B927424A01001CB0E1 /* SceneDelegate.swift */,
 				B0A697BB27424A01001CB0E1 /* ViewController.swift */,
+				CA25B85A2B58AF66004EF4BA /* AnnotationParams.swift */,
 				B0A697BD27424A01001CB0E1 /* Main.storyboard */,
 				B0A697C027424A03001CB0E1 /* Assets.xcassets */,
 				B0A697C227424A03001CB0E1 /* LaunchScreen.storyboard */,
 				B0A697C527424A03001CB0E1 /* Info.plist */,
 			);
 			path = JeonLib;
+			sourceTree = "<group>";
+		};
+		CA25B7422B58AA19004EF4BA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7F32B58AB5F004EF4BA /* SwiftUIKit */,
+				CA25B7DA2B58AB0D004EF4BA /* Kit */,
+				CA25B7442B58AA19004EF4BA /* Widget */,
+				CA25B7552B58AA19004EF4BA /* Picker */,
+				CA25B75A2B58AA19004EF4BA /* Dialog */,
+				CA25B7C72B58AADC004EF4BA /* BaseAlert.swift */,
+				CA25B7CB2B58AADC004EF4BA /* BaseAlertViewController.swift */,
+				CA25B7862B58AA19004EF4BA /* Screen.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA25B7442B58AA19004EF4BA /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B74A2B58AA19004EF4BA /* ColorPicker */,
+				CA25B7462B58AA19004EF4BA /* RadioGroup.swift */,
+				CA25B7502B58AA19004EF4BA /* RadioGroup.xib */,
+				CA25B7512B58AA19004EF4BA /* SizeCheckView.swift */,
+				CA25B7452B58AA19004EF4BA /* SizeCheckView.xib */,
+				CA25B7492B58AA19004EF4BA /* ToastView.xib */,
+				CA25B74F2B58AA19004EF4BA /* TouchPassButton.swift */,
+				CA25B7522B58AA19004EF4BA /* CheckBox.xib */,
+				CA25B7532B58AA19004EF4BA /* CheckBox.swift */,
+				CA25B7482B58AA19004EF4BA /* SizeChangeSlider.swift */,
+				CA25B8582B58AF1F004EF4BA /* JUTouchPassButton.swift */,
+				CA25B7472B58AA19004EF4BA /* ToastView.swift */,
+				CA25B7542B58AA19004EF4BA /* Toast.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		CA25B74A2B58AA19004EF4BA /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B74B2B58AA19004EF4BA /* BrightnessView.swift */,
+				CA25B74C2B58AA19004EF4BA /* ColorUtils.swift */,
+				CA25B74D2B58AA19004EF4BA /* ColorWheel.swift */,
+				CA25B74E2B58AA19004EF4BA /* SelectedColorView.swift */,
+			);
+			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		CA25B7552B58AA19004EF4BA /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7562B58AA19004EF4BA /* JUDocPicker.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		CA25B75A2B58AA19004EF4BA /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7612B58AA19004EF4BA /* Alert */,
+				CA25B7662B58AA19004EF4BA /* BaseCustomDialog.swift */,
+				CA25B7712B58AA19004EF4BA /* BaseColorPickerDialog.swift */,
+				CA25B75D2B58AA19004EF4BA /* ColorPickerDialog.swift */,
+				CA25B76B2B58AA19004EF4BA /* ColorPickerDialog.xib */,
+				CA25B8562B58AE21004EF4BA /* ColorAlphaSelectDialog.swift */,
+				CA25B75B2B58AA19004EF4BA /* ColorAlphaSelectDialog.xib */,
+				CA25B7692B58AA19004EF4BA /* ProgressDialog.xib */,
+				CA25B76D2B58AA19004EF4BA /* ProgressDialog.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		CA25B7612B58AA19004EF4BA /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7622B58AA19004EF4BA /* JCAlertController.swift */,
+				CA25B7632B58AA19004EF4BA /* JCAlertController.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		CA25B7DA2B58AB0D004EF4BA /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7DB2B58AB43004EF4BA /* JUKit.swift */,
+				CA25B7DD2B58AB43004EF4BA /* JUAlert.swift */,
+				CA25B7E22B58AB43004EF4BA /* JUAlert.xib */,
+				CA25B7E52B58AB43004EF4BA /* JUContextMenu.swift */,
+				CA25B7E62B58AB43004EF4BA /* JUContextMenu.xib */,
+				CA25B7E42B58AB43004EF4BA /* JUImagePicker.swift */,
+				CA25B7E02B58AB43004EF4BA /* JUProgress.swift */,
+				CA25B7DC2B58AB43004EF4BA /* JUProgress.xib */,
+				CA25B7DE2B58AB43004EF4BA /* JUToast.swift */,
+				CA25B7E32B58AB43004EF4BA /* JUToastView.swift */,
+				CA25B7DF2B58AB43004EF4BA /* JUToastView.xib */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		CA25B7F32B58AB5F004EF4BA /* SwiftUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7F42B58AB7F004EF4BA /* alert */,
+				CA25B7F92B58AB7F004EF4BA /* modifier */,
+				CA25B7FA2B58AB7F004EF4BA /* widget */,
+			);
+			path = SwiftUIKit;
+			sourceTree = "<group>";
+		};
+		CA25B7F42B58AB7F004EF4BA /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7F52B58AB7F004EF4BA /* JSProgress.swift */,
+				CA25B7F62B58AB7F004EF4BA /* JSAlert.swift */,
+			);
+			path = alert;
+			sourceTree = "<group>";
+		};
+		CA25B7F92B58AB7F004EF4BA /* modifier */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modifier;
+			sourceTree = "<group>";
+		};
+		CA25B7FA2B58AB7F004EF4BA /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B7FB2B58AB7F004EF4BA /* JSTabView.swift */,
+				CA25B7FD2B58AB7F004EF4BA /* JSButton.swift */,
+				CA25B7FE2B58AB7F004EF4BA /* JSRadioGroup.swift */,
+				CA25B7FF2B58AB7F004EF4BA /* JSCheckBox.swift */,
+				CA25B8002B58AB7F004EF4BA /* JSPopup.swift */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		CA25B80C2B58AB9C004EF4BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B8622B58B0C6004EF4BA /* PathManager.swift */,
+				CA25B8602B58B0A9004EF4BA /* FileStorage.swift */,
+				CA25B85C2B58AFA0004EF4BA /* Ex.swift */,
+				CA25B85E2B58AFFD004EF4BA /* ExUi.swift */,
+				CA25B80D2B58ABEC004EF4BA /* CookieManager.swift */,
+				CA25B80E2B58ABEC004EF4BA /* LogEx.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CA25B8112B58ABF2004EF4BA /* localDB */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B8122B58ABF2004EF4BA /* File */,
+			);
+			path = localDB;
+			sourceTree = "<group>";
+		};
+		CA25B8122B58ABF2004EF4BA /* File */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B8132B58ABF2004EF4BA /* FileDAO.swift */,
+				CA25B8142B58ABF2004EF4BA /* FileEntity.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		CA25B8172B58ACCD004EF4BA /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B8182B58ACCD004EF4BA /* screenshots */,
+				CA25B81A2B58ACCD004EF4BA /* Appfile */,
+				CA25B81B2B58ACCD004EF4BA /* Deliverfile */,
+				CA25B81C2B58ACCD004EF4BA /* Fastfile */,
+				CA25B81D2B58ACCD004EF4BA /* README.md */,
+				CA25B81E2B58ACCD004EF4BA /* metadata */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		CA25B8182B58ACCD004EF4BA /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B8192B58ACCD004EF4BA /* README.txt */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
+		CA25B81E2B58ACCD004EF4BA /* metadata */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B81F2B58ACCD004EF4BA /* copyright.txt */,
+				CA25B8202B58ACCD004EF4BA /* secondary_first_sub_category.txt */,
+				CA25B8212B58ACCD004EF4BA /* secondary_category.txt */,
+				CA25B8222B58ACCD004EF4BA /* secondary_second_sub_category.txt */,
+				CA25B8232B58ACCD004EF4BA /* primary_second_sub_category.txt */,
+				CA25B8242B58ACCD004EF4BA /* review_information */,
+				CA25B82C2B58ACCD004EF4BA /* ko */,
+				CA25B8372B58ACCD004EF4BA /* primary_first_sub_category.txt */,
+				CA25B8382B58ACCD004EF4BA /* primary_category.txt */,
+			);
+			path = metadata;
+			sourceTree = "<group>";
+		};
+		CA25B8242B58ACCD004EF4BA /* review_information */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B8252B58ACCD004EF4BA /* phone_number.txt */,
+				CA25B8262B58ACCD004EF4BA /* demo_user.txt */,
+				CA25B8272B58ACCD004EF4BA /* notes.txt */,
+				CA25B8282B58ACCD004EF4BA /* email_address.txt */,
+				CA25B8292B58ACCD004EF4BA /* last_name.txt */,
+				CA25B82A2B58ACCD004EF4BA /* first_name.txt */,
+				CA25B82B2B58ACCD004EF4BA /* demo_password.txt */,
+			);
+			path = review_information;
+			sourceTree = "<group>";
+		};
+		CA25B82C2B58ACCD004EF4BA /* ko */ = {
+			isa = PBXGroup;
+			children = (
+				CA25B82D2B58ACCD004EF4BA /* privacy_url.txt */,
+				CA25B82E2B58ACCD004EF4BA /* subtitle.txt */,
+				CA25B82F2B58ACCD004EF4BA /* support_url.txt */,
+				CA25B8302B58ACCD004EF4BA /* keywords.txt */,
+				CA25B8312B58ACCD004EF4BA /* apple_tv_privacy_policy.txt */,
+				CA25B8322B58ACCD004EF4BA /* promotional_text.txt */,
+				CA25B8332B58ACCD004EF4BA /* release_notes.txt */,
+				CA25B8342B58ACCD004EF4BA /* name.txt */,
+				CA25B8352B58ACCD004EF4BA /* marketing_url.txt */,
+				CA25B8362B58ACCD004EF4BA /* description.txt */,
+			);
+			path = ko;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +508,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0A697C827424A03001CB0E1 /* Build configuration list for PBXNativeTarget "JeonLib" */;
 			buildPhases = (
+				4D83E7198A4F559906C32EBE /* [CP] Check Pods Manifest.lock */,
 				B0A697B027424A01001CB0E1 /* Sources */,
 				B0A697B127424A01001CB0E1 /* Frameworks */,
 				B0A697B227424A01001CB0E1 /* Resources */,
+				B39490D7E2FCBB367FE910EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +561,150 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA25B78C2B58AA19004EF4BA /* ToastView.xib in Resources */,
+				CA25B7882B58AA19004EF4BA /* SizeCheckView.xib in Resources */,
+				CA25B8442B58ACCD004EF4BA /* demo_user.txt in Resources */,
+				CA25B8532B58ACCD004EF4BA /* description.txt in Resources */,
+				CA25B83A2B58ACCD004EF4BA /* Appfile in Resources */,
+				CA25B8502B58ACCD004EF4BA /* release_notes.txt in Resources */,
+				CA25B7E82B58AB43004EF4BA /* JUProgress.xib in Resources */,
+				CA25B84A2B58ACCD004EF4BA /* privacy_url.txt in Resources */,
+				CA25B84F2B58ACCD004EF4BA /* promotional_text.txt in Resources */,
+				CA25B8542B58ACCD004EF4BA /* primary_first_sub_category.txt in Resources */,
+				CA25B8552B58ACCD004EF4BA /* primary_category.txt in Resources */,
+				CA25B7A92B58AA19004EF4BA /* ColorPickerDialog.xib in Resources */,
+				CA25B83D2B58ACCD004EF4BA /* README.md in Resources */,
+				CA25B84C2B58ACCD004EF4BA /* support_url.txt in Resources */,
+				CA25B7EE2B58AB43004EF4BA /* JUAlert.xib in Resources */,
+				CA25B83B2B58ACCD004EF4BA /* Deliverfile in Resources */,
+				CA25B8412B58ACCD004EF4BA /* secondary_second_sub_category.txt in Resources */,
+				CA25B84D2B58ACCD004EF4BA /* keywords.txt in Resources */,
+				CA25B8422B58ACCD004EF4BA /* primary_second_sub_category.txt in Resources */,
+				CA25B8482B58ACCD004EF4BA /* first_name.txt in Resources */,
+				CA25B7EB2B58AB43004EF4BA /* JUToastView.xib in Resources */,
+				CA25B7F22B58AB43004EF4BA /* JUContextMenu.xib in Resources */,
+				CA25B8392B58ACCD004EF4BA /* README.txt in Resources */,
 				B0A697C427424A03001CB0E1 /* LaunchScreen.storyboard in Resources */,
+				CA25B8402B58ACCD004EF4BA /* secondary_category.txt in Resources */,
+				CA25B8452B58ACCD004EF4BA /* notes.txt in Resources */,
+				CA25B7942B58AA19004EF4BA /* CheckBox.xib in Resources */,
+				CA25B8492B58ACCD004EF4BA /* demo_password.txt in Resources */,
+				CA25B8522B58ACCD004EF4BA /* marketing_url.txt in Resources */,
 				B0A697C127424A03001CB0E1 /* Assets.xcassets in Resources */,
+				CA25B8462B58ACCD004EF4BA /* email_address.txt in Resources */,
+				CA25B79A2B58AA19004EF4BA /* ColorAlphaSelectDialog.xib in Resources */,
+				CA25B7A72B58AA19004EF4BA /* ProgressDialog.xib in Resources */,
+				CA25B83F2B58ACCD004EF4BA /* secondary_first_sub_category.txt in Resources */,
+				CA25B83C2B58ACCD004EF4BA /* Fastfile in Resources */,
+				CA25B8512B58ACCD004EF4BA /* name.txt in Resources */,
+				CA25B8472B58ACCD004EF4BA /* last_name.txt in Resources */,
+				CA25B83E2B58ACCD004EF4BA /* copyright.txt in Resources */,
 				B0A697BF27424A01001CB0E1 /* Main.storyboard in Resources */,
+				CA25B84E2B58ACCD004EF4BA /* apple_tv_privacy_policy.txt in Resources */,
+				CA25B84B2B58ACCD004EF4BA /* subtitle.txt in Resources */,
+				CA25B7922B58AA19004EF4BA /* RadioGroup.xib in Resources */,
+				CA25B8432B58ACCD004EF4BA /* phone_number.txt in Resources */,
+				CA25B7A12B58AA19004EF4BA /* JCAlertController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D83E7198A4F559906C32EBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JeonLib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B39490D7E2FCBB367FE910EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JeonLib/Pods-JeonLib-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JeonLib/Pods-JeonLib-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JeonLib/Pods-JeonLib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B0A697B027424A01001CB0E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA25B85F2B58AFFD004EF4BA /* ExUi.swift in Sources */,
+				CA25B80A2B58AB7F004EF4BA /* JSPopup.swift in Sources */,
+				CA25B7AF2B58AA19004EF4BA /* BaseColorPickerDialog.swift in Sources */,
 				B0A697BC27424A01001CB0E1 /* ViewController.swift in Sources */,
+				CA25B8632B58B0C6004EF4BA /* PathManager.swift in Sources */,
+				CA25B7E72B58AB43004EF4BA /* JUKit.swift in Sources */,
+				CA25B7AB2B58AA19004EF4BA /* ProgressDialog.swift in Sources */,
+				CA25B7972B58AA19004EF4BA /* JUDocPicker.swift in Sources */,
+				CA25B7912B58AA19004EF4BA /* TouchPassButton.swift in Sources */,
+				CA25B7A42B58AA19004EF4BA /* BaseCustomDialog.swift in Sources */,
+				CA25B7932B58AA19004EF4BA /* SizeCheckView.swift in Sources */,
+				CA25B8022B58AB7F004EF4BA /* JSProgress.swift in Sources */,
+				CA25B78D2B58AA19004EF4BA /* BrightnessView.swift in Sources */,
+				CA25B8592B58AF1F004EF4BA /* JUTouchPassButton.swift in Sources */,
+				CA25B8072B58AB7F004EF4BA /* JSButton.swift in Sources */,
+				CA25B8082B58AB7F004EF4BA /* JSRadioGroup.swift in Sources */,
+				CA25B7F02B58AB43004EF4BA /* JUImagePicker.swift in Sources */,
+				CA25B7EA2B58AB43004EF4BA /* JUToast.swift in Sources */,
+				CA25B8152B58ABF2004EF4BA /* FileDAO.swift in Sources */,
+				CA25B7EC2B58AB43004EF4BA /* JUProgress.swift in Sources */,
+				CA25B8032B58AB7F004EF4BA /* JSAlert.swift in Sources */,
+				CA25B7D82B58AADC004EF4BA /* BaseAlertViewController.swift in Sources */,
+				CA25B8162B58ABF2004EF4BA /* FileEntity.swift in Sources */,
+				CA25B80F2B58ABEC004EF4BA /* CookieManager.swift in Sources */,
+				CA25B78F2B58AA19004EF4BA /* ColorWheel.swift in Sources */,
+				CA25B7A02B58AA19004EF4BA /* JCAlertController.swift in Sources */,
+				CA25B7EF2B58AB43004EF4BA /* JUToastView.swift in Sources */,
+				CA25B79C2B58AA19004EF4BA /* ColorPickerDialog.swift in Sources */,
+				CA25B8052B58AB7F004EF4BA /* JSTabView.swift in Sources */,
 				B0A697B827424A01001CB0E1 /* AppDelegate.swift in Sources */,
+				CA25B7E92B58AB43004EF4BA /* JUAlert.swift in Sources */,
+				CA25B78E2B58AA19004EF4BA /* ColorUtils.swift in Sources */,
+				CA25B8102B58ABEC004EF4BA /* LogEx.swift in Sources */,
+				CA25B85D2B58AFA0004EF4BA /* Ex.swift in Sources */,
+				CA25B8612B58B0A9004EF4BA /* FileStorage.swift in Sources */,
+				CA25B7BF2B58AA19004EF4BA /* Screen.swift in Sources */,
+				CA25B7F12B58AB43004EF4BA /* JUContextMenu.swift in Sources */,
+				CA25B8092B58AB7F004EF4BA /* JSCheckBox.swift in Sources */,
+				CA25B8572B58AE21004EF4BA /* ColorAlphaSelectDialog.swift in Sources */,
+				CA25B85B2B58AF66004EF4BA /* AnnotationParams.swift in Sources */,
 				B0A697BA27424A01001CB0E1 /* SceneDelegate.swift in Sources */,
+				CA25B78B2B58AA19004EF4BA /* SizeChangeSlider.swift in Sources */,
+				CA25B7902B58AA19004EF4BA /* SelectedColorView.swift in Sources */,
+				CA25B7D42B58AADC004EF4BA /* BaseAlert.swift in Sources */,
+				CA25B7892B58AA19004EF4BA /* RadioGroup.swift in Sources */,
+				CA25B7952B58AA19004EF4BA /* CheckBox.swift in Sources */,
+				CA25B78A2B58AA19004EF4BA /* ToastView.swift in Sources */,
+				CA25B7962B58AA19004EF4BA /* Toast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +848,13 @@
 		};
 		B0A697C927424A03001CB0E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3481E3EFE277C554612A57BE /* Pods-JeonLib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2S4776YVCU;
+				DEVELOPMENT_TEAM = 5V6RV27427;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JeonLib/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -302,7 +867,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeonwork.client.JeonLib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeonwork.JeonLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,12 +877,13 @@
 		};
 		B0A697CA27424A03001CB0E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B263BAC64E0FD02C6B20FBED /* Pods-JeonLib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2S4776YVCU;
+				DEVELOPMENT_TEAM = 5V6RV27427;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JeonLib/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -330,7 +896,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jeonwork.client.JeonLib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeonwork.JeonLib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

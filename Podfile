@@ -6,5 +6,8 @@ target 'JeonLib' do
   use_frameworks!
 
   # Pods for JeonLib
+  pod 'RealmSwift'
+  pod 'RxSwift'
+  pod 'RxGesture'
 
 end

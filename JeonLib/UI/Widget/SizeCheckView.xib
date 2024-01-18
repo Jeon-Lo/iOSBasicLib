@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SizeCheckView" customModule="PDFApp" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="dIR-gV-3Qq" id="Hmc-db-RcG"/>
+                <outlet property="circleDiameterHeight" destination="HTQ-M8-eqt" id="9sn-dL-zmc"/>
+                <outlet property="circleDiameterWidth" destination="7Km-Ls-dDg" id="tEG-1H-gFa"/>
+                <outlet property="circleView" destination="lpy-1g-OG2" id="PN9-Oo-RFr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="523"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIR-gV-3Qq">
+                    <rect key="frame" x="0.0" y="0.0" width="352" height="523"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpy-1g-OG2">
+                            <rect key="frame" x="171" y="256.66666666666669" width="10" height="10"/>
+                            <color key="backgroundColor" systemColor="tintColor"/>
+                            <color key="tintColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="7Km-Ls-dDg"/>
+                                <constraint firstAttribute="height" constant="10" id="HTQ-M8-eqt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lpy-1g-OG2" firstAttribute="centerY" secondItem="dIR-gV-3Qq" secondAttribute="centerY" id="GKe-xP-RRf"/>
+                        <constraint firstItem="lpy-1g-OG2" firstAttribute="centerX" secondItem="dIR-gV-3Qq" secondAttribute="centerX" id="jnQ-EZ-z08"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dIR-gV-3Qq" secondAttribute="bottom" id="Ho3-bU-PUw"/>
+                <constraint firstItem="dIR-gV-3Qq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JxO-sa-8UR"/>
+                <constraint firstItem="dIR-gV-3Qq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KIP-Gt-az4"/>
+                <constraint firstAttribute="trailing" secondItem="dIR-gV-3Qq" secondAttribute="trailing" id="wTQ-04-I4w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="105.34351145038167" y="136.26760563380282"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
