@@ -17,17 +17,17 @@ struct JSTabViewPreviews: View {
     
     var body: some View {
         JSTabView(selection: $tabSelection, isEditMode: $isEditMode) {
-            HomeScreen()
-                .tabBarItem(tab: .home, selection: $tabSelection)
+//            HomeScreen()
+//                .tabBarItem(tab: .home, selection: $tabSelection)
             
-            MyFilesScreen(isEditMode: $isEditMode)
-                .tabBarItem(tab: .myFiles, selection: $tabSelection)
+//            MyFilesScreen(isEditMode: $isEditMode)
+//                .tabBarItem(tab: .myFiles, selection: $tabSelection)
             
-            FavoritesScreen(isEditMode: $isEditMode)
-                .tabBarItem(tab: .favorites, selection: $tabSelection)
+//            FavoritesScreen(isEditMode: $isEditMode)
+//                .tabBarItem(tab: .favorites, selection: $tabSelection)
             
-            SearchScreen()
-                .tabBarItem(tab: .search, selection: $tabSelection)
+//            SearchScreen()
+//                .tabBarItem(tab: .search, selection: $tabSelection)
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
@@ -125,12 +125,12 @@ struct JSTabBarView : View {
     }
     
     private func hasPermission(_ tab : TabBarItem) -> Bool {
-        if tab == .upload && !Session.shared.hasPermission(.CLOUD) {
-            return false
-        }
-        if tab == .merge && !Session.shared.hasPermission(.EDIT) {
-            return false
-        }
+//        if tab == .upload && !Session.shared.hasPermission(.CLOUD) {
+//            return false
+//        }
+//        if tab == .merge && !Session.shared.hasPermission(.EDIT) {
+//            return false
+//        }
         return true
     }
     

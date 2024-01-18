@@ -73,6 +73,21 @@ extension UIImageView
     }
 }
 
+extension Color {
+    init(hex: String, opacity: Double = 1.0) {
+        var hexStr = hex
+        if hexStr.hasPrefix("#") {
+            hexStr = hexStr.replacingOccurrences(of: "#", with: "")
+        }
+        let hexValue: Int = Int(hexStr, radix: 16)!
+        let red = Double((hexValue >> 16) & 0xff) / 255
+        let green = Double((hexValue >> 8) & 0xff) / 255
+        let blue = Double((hexValue >> 0) & 0xff) / 255
+
+        self.init(.sRGB, red: red, green: green, blue: blue, opacity: opacity)
+    }
+}
+
 extension UIColor {
     convenience init(hexString: String) {
         let hex = hexString.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
@@ -135,6 +150,16 @@ extension UIWindow
         else {
             return UIApplication.shared.keyWindow
         }
+    }
+    
+    static var topViewController: UIViewController? {
+        if var topVC = UIWindow.key?.rootViewController {
+            while let presentVC = topVC.presentedViewController {
+                topVC = presentVC
+            }
+            return topVC
+        }
+        return nil
     }
 }
 
